@@ -1,6 +1,6 @@
 {
     "name":        "pdftk-simple",
-    "version":     "1.0.0",
+    "version":     "1.0.1",
     "description": "Simple PDFTk Wrapper",
     "keywords":    [ "pdftk", "wrapper" ],
     "main":        "./pdftk-api.js",

@@ -1,0 +1,52 @@
+{
+    "name":        "pdftk-simple",
+    "version":     "1.2.1",
+    "description": "Simple PDFTk Wrapper",
+    "keywords":    [ "pdftk", "wrapper" ],
+    "main":        "./pdftk-api.js",
+    "bin": {
+        "pdftk":  "./pdftk-cli.js"
+    },
+    "repository": {
+        "type": "git",
+        "url":  "https://github.com/rse/pdftk-simple.git"
+    },
+    "author": {
+        "name":  "Dr. Ralf S. Engelschall",
+        "email": "rse@engelschall.com",
+        "url":   "http://engelschall.com"
+    },
+    "license":  "MIT",
+    "homepage": "https://github.com/rse/pdftk-simple",
+    "bugs":     "https://github.com/rse/pdftk-simple/issues",
+    "devDependencies": {
+        "babel-eslint":            "10.0.3",
+        "eslint":                  "6.8.0",
+        "eslint-config-standard":  "14.1.0",
+        "eslint-plugin-standard":  "4.0.1",
+        "eslint-plugin-promise":   "4.2.1",
+        "eslint-plugin-import":    "2.20.0",
+        "eslint-plugin-node":      "11.0.0",
+        "tslint":                  "6.0.0",
+        "typescript":              "3.7.5"
+    },
+    "dependencies": {
+        "npm-install-fetch":       "1.0.9",
+        "which":                   "2.0.2",
+        "eventemitter3":           "4.0.0",
+        "execa":                   "4.0.0"
+    },
+    "engines": {
+        "node":                    ">=8.0.0"
+    },
+    "scripts": {
+        "prepublishOnly": "eslint --config eslint.yaml pdftk-*.js && tslint --config tslint.json pdftk-*.d.ts",
+        "install":        "npm-install-fetch",
+        "test":           "node sample.js"
+    },
+    "npm-install-fetch": {
+        "name":    "PDFTk 3.0.9 [6 MB]",
+        "input":   "https://gitlab.com/pdftk-java/pdftk/-/jobs/405057847/artifacts/raw/build/libs/pdftk-all.jar",
+        "output":  "pdftk-cli.jar"
+    }
+}

@@ -55,6 +55,11 @@ other approaches, it does not need a pre-installed PDFTk. Instead, it
 automatically downloads and locally installs the PDFTk distribution on
 `npm install` and uses the plain java(1) command to execute it.
 
+Latest pre-build PDFTk distributions can always be found under the
+[PDFTk CI/CD Jobs](https://gitlab.com/pdftk-java/pdftk/-/jobs). You can
+download a newer `pdftk-all.jar` manually and use the pdftk-simpe API
+option `pdftk` to specify the path to your particular JAR file.
+
 License
 -------
 

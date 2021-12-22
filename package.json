@@ -44,8 +44,8 @@
         "test":           "node sample.js"
     },
     "npm-install-fetch": {
-        "name":    "PDFTk 3.3.1 (2021-08-24) [5.4 MB]",
-        "input":   "https://gitlab.com/pdftk-java/pdftk/-/jobs/1527259628/artifacts/raw/build/libs/pdftk-all.jar",
+        "name":    "PDFTk 3.3.2 (2021-12-22) [5.4 MB]",
+        "input":   "https://gitlab.com/pdftk-java/pdftk/-/jobs/1904577721/artifacts/raw/build/libs/pdftk-all.jar",
         "output":  "pdftk-cli.jar"
     }
 }
